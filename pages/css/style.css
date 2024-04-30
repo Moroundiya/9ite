@@ -2950,6 +2950,7 @@ progress {
   #parent-9ite-navbar {
     display: none !important;
   }
+
   #swiper-container-main-parent {
     /* padding-top: 60px !important; */
   }
@@ -19627,6 +19628,7 @@ textarea.form-control.is-invalid {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  background-color: transparent;
 }
 
 .slideshow-number-pagination .swiper-pagination-bullet:before {
