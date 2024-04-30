@@ -484,8 +484,8 @@ fieldset {
 
 
 #swiper-container-main-parent {
-  padding-top: 0 !important;
-  position: relative;
+  /* padding-top: 0 !important; */
+  /* position: relative; */
 }
 
 
@@ -2951,7 +2951,7 @@ progress {
     display: none !important;
   }
   #swiper-container-main-parent {
-    padding-top: 60px !important;
+    /* padding-top: 60px !important; */
   }
 
   #shop-main-section {
