@@ -474,6 +474,31 @@ fieldset {
   display: none !important;
 }
 
+#parent-9ite-navbar {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+
+#swiper-container-main-parent {
+  padding-top: 0 !important;
+  position: relative;
+}
+
+
+#currency-select {
+  outline: none;
+  border: none;
+  font-weight: bold;
+}
+
+#shop-main-section {
+  margin-top: 100px !important;
+}
+
 
 legend {
   float: left;
@@ -2921,6 +2946,18 @@ progress {
 }
 
 @media (max-width: 991.98px) {
+
+  #parent-9ite-navbar {
+    display: none !important;
+  }
+  #swiper-container-main-parent {
+    padding-top: 60px !important;
+  }
+
+  #shop-main-section {
+    margin-top: 0 !important;
+  }
+
   .modal-fullscreen-lg-down {
     width: 100vw;
     max-width: none;
@@ -19079,7 +19116,7 @@ textarea.form-control.is-invalid {
 }
 
 .footer__social-link .svg-icon {
-  fill: #FF5733;
+  fill: #fff;
 }
 
 .footer-newsletter__form .btn-link {
