@@ -480,6 +480,7 @@ fieldset {
   top: 0;
   left: 0;
   z-index: 10;
+  background: #3D2A20;
 }
 
 
@@ -515,13 +516,47 @@ fieldset {
   display: block;
   fill: #fff !important;
 }
+
 #mobile-header-mobile .mobile-header-tools__item {
   color: #fff !important;
 }
-#mobile-header-mobile #mobile-cart-amount{
+
+#mobile-header-mobile #mobile-cart-amount {
   background-color: #fff !important;
   color: #3D2A20;
 }
+
+
+#parent-9ite-navbar .navigation .navigation__link {
+  color: #fff;
+}
+
+#parent-9ite-navbar #currency-select {
+  background-color: #3D2A20 !important;
+  color: #fff;
+}
+#parent-9ite-navbar .header-tools__cart {
+  color: #fff;
+}
+#parent-9ite-navbar .cart-amount {
+  background: #fff;
+  color: #3D2A20;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 legend {

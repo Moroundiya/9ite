@@ -178,7 +178,7 @@
     </symbol>
   </svg>
   <!-- Mobile Header -->
-  <div class="header-mobile header_sticky">
+  <div class="header-mobile header_sticky" id="mobile-header-mobile">
     <div class="container d-flex align-items-center h-100">
       <a class="mobile-nav-activator d-block position-relative" href="index.html#">
         <svg class="nav-icon" width="25" height="18" viewBox="0 0 25 18" xmlns="http://www.w3.org/2000/svg"><use href="#icon_nav" /></svg>
@@ -187,13 +187,19 @@
 
       <div class="logo">
         <a href="index.html">
-          <img src="images//logo.png" alt="Uomo" class="logo__image d-block">
+          <img src="images/logo-cosmetics.png" alt="Uomo" class="logo__image d-block">
         </a>
       </div><!-- /.logo -->
 
+
+      <select class="form-seldect form-select-sm bg-transparent border-0 outline-0 me-2 p-0" name="store-currency" id="currency-select">
+        <option value="usd" selected="">$ USD</option>
+        <option value="gbp">₦ NGN</option>
+      </select>
+
       <a href="index.html#" class="header-tools__item header-tools__cart js-open-aside" data-aside="cartDrawer">
-        <svg class="d-block" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
-        <span class="cart-amount d-block position-absolute js-cart-items-count">3</span>
+        <svg class="d-block mobile-header-tools__item" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
+        <span class="cart-amount d-block position-absolute js-cart-items-count" id="mobile-cart-amount">3</span>
       </a>
     </div><!-- /.container -->
 
@@ -222,7 +228,13 @@
               <a href="index.html" class="navigation__link">Home</a>
             </li>
             <li class="navigation__item">
+              <a href="new-arrival.html" class="navigation__link">New Arrival</a>
+            </li>
+            <li class="navigation__item">
               <a href="shop.html" class="navigation__link">Shop</a>
+            </li>
+            <li class="navigation__item">
+              <a href="shop.html" class="navigation__link">FAQ</a>
             </li>
             <li class="navigation__item">
               <a href="about.html" class="navigation__link">About</a>
@@ -249,7 +261,7 @@
       <div class="d-flex align-items-center">
         <div class="logo">
           <a href="index.html">
-            <img src="images/logo.png" alt="Uomo" class="logo__image">
+            <img src="images/logo-cosmetics.png" alt="Uomo" class="logo__image">
           </a>
         </div><!-- /.logo -->
     
@@ -257,8 +269,11 @@
         <nav class="navigation w-100 d-flex align-items-center justify-content-center py-2 ">
           <ul class="navigation__list list-unstyled d-flex my-1">
             <li class="navigation__item">
-              <a href="index.html#" class="navigation__link">HOME</a>
+              <a href="index.html" class="navigation__link">HOME</a>
           
+            </li>
+            <li class="navigation__item">
+              <a href="new-arrival.html" class="navigation__link">NEW ARRIVAL</a>
             </li>
             <li class="navigation__item">
               <a href="shop.html" class="navigation__link">SHOP</a>
@@ -266,6 +281,9 @@
           
             <li class="navigation__item">
               <a href="about.html" class="navigation__link">ABOUT</a>
+            </li>
+            <li class="navigation__item">
+              <a href="faq.html" class="navigation__link">FAQ</a>
             </li>
             <li class="navigation__item">
               <a href="contact.html" class="navigation__link">CONTACT</a>
@@ -303,7 +321,7 @@
           </div><!-- /.header-tools__item hover-container -->
     
     
-          <select class="form-select form-select-sm bg-transparent border-0" name="store-currency" id="currency-select">
+          <select class="form-select-sm bg-transparent border-0 p-0" name="store-currency" id="currency-select">
             <option value="usd" selected="">$ USD</option>
             <option value="gbp">₦ NGN</option>
           </select>
@@ -318,12 +336,12 @@
 
 
     <section class="shop-checkout container" id="shop-main-section">
-      <h2 class="page-title pt-4">Cart</h2>
+      <h2 class="page-title pt-4"></h2>
       <div class="checkout-steps">
         <a href="shop_cart.html" class="checkout-steps__item active">
           <span class="checkout-steps__item-number">01</span>
           <span class="checkout-steps__item-title">
-            <span>Shopping Bag</span>
+            <span>Shopping Lists</span>
             <em>Manage Your Items List</em>
           </span>
         </a>
@@ -620,108 +638,30 @@
   <footer class="footer-mobile container w-100 px-5 d-md-none bg-body">
     <div class="row text-center">
       <div class="col-4">
-        <a href="https://uomo-html.flexkitux.com/" class="footer-mobile__link d-flex flex-column align-items-center">
+        <a href="index.html" class="footer-mobile__link d-flex flex-column align-items-center">
           <svg class="d-block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_home" /></svg>
           <span>Home</span>
         </a>
       </div><!-- /.col-3 -->
 
       <div class="col-4">
-        <a href="https://uomo-html.flexkitux.com/" class="footer-mobile__link d-flex flex-column align-items-center">
+        <a href="shop.html" class="footer-mobile__link d-flex flex-column align-items-center">
           <svg class="d-block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_hanger" /></svg>
           <span>Shop</span>
         </a>
       </div><!-- /.col-3 -->
 
       <div class="col-4">
-        <a href="https://uomo-html.flexkitux.com/" class="footer-mobile__link d-flex flex-column align-items-center">
+        <a href="shop_cart.html" class="footer-mobile__link d-flex flex-column align-items-center">
           <div class="position-relative">
-            <svg class="d-block" width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_heart" /></svg>
+            <svg class="d-block" width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><use href="#icon_cart" /></svg>
             <span class="wishlist-amount d-block position-absolute js-wishlist-count">3</span>
           </div>
-          <span>Wishlist</span>
+          <span>Cart</span>
         </a>
-      </div><!-- /.col-3 -->
+      </div>
     </div><!-- /.row -->
-  </footer><!-- /.footer-mobile container position-fixed d-md-none bottom-0 -->
-
-  <!-- Customer Login Form -->
-  <div class="aside aside_right overflow-hidden customer-forms" id="customerForms">
-    <div class="customer-forms__wrapper d-flex position-relative">
-      <div class="customer__login">
-        <div class="aside-header d-flex align-items-center">
-          <h3 class="text-uppercase fs-6 mb-0">Login</h3>
-          <button class="btn-close-lg js-close-aside ms-auto"></button>
-        </div><!-- /.aside-header -->
-
-        <form action="login_register.html" method="POST" class="aside-content">
-          <div class="form-floating mb-3">
-            <input name="email" type="email" class="form-control form-control_gray" id="customerNameEmailInput" placeholder="name@example.com">
-            <label for="customerNameEmailInput">Username or email address *</label>
-          </div>
-
-          <div class="pb-3"></div>
-
-          <div class="form-label-fixed mb-3">
-            <label for="customerPasswordInput" class="form-label">Password *</label>
-            <input name="password" id="customerPasswordInput" class="form-control form-control_gray" type="password" placeholder="********">
-          </div>
-
-          <div class="d-flex align-items-center mb-3 pb-2">
-            <div class="form-check mb-0">
-              <input name="remember" class="form-check-input form-check-input_fill" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label text-secondary" for="flexCheckDefault">Remember me</label>
-            </div>
-            <a href="reset_password.html" class="btn-text ms-auto">Lost password?</a>
-          </div>
-
-          <button class="btn btn-primary w-100 text-uppercase" type="submit">Log In</button>
-
-          <div class="customer-option mt-4 text-center">
-            <span class="text-secondary">No account yet?</span>
-            <a href="login_register.html#register-tab" class="btn-text js-show-register">Create Account</a>
-          </div>
-        </form>
-      </div><!-- /.customer__login -->
-
-      <div class="customer__register">
-        <div class="aside-header d-flex align-items-center">
-          <h3 class="text-uppercase fs-6 mb-0">Create an account</h3>
-          <button class="btn-close-lg js-close-aside btn-close-aside ms-auto"></button>
-        </div><!-- /.aside-header -->
-
-        <form action="login_register.html" method="POST" class="aside-content">
-          <div class="form-floating mb-4">
-            <input name="username" type="text" class="form-control form-control_gray" id="registerUserNameInput" placeholder="Username">
-            <label for="registerUserNameInput">Username</label>
-          </div>
-
-          <div class="pb-1"></div>
-
-          <div class="form-floating mb-4">
-            <input name="email" type="email" class="form-control form-control_gray" id="registerUserEmailInput" placeholder="user@company.com">
-            <label for="registerUserEmailInput">Email address *</label>
-          </div>
-
-          <div class="pb-1"></div>
-
-          <div class="form-label-fixed mb-4">
-            <label for="registerPasswordInput" class="form-label">Password *</label>
-            <input name="password" id="registerPasswordInput" class="form-control form-control_gray" type="password" placeholder="*******">
-          </div>
-
-          <p class="text-secondary mb-4">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
-
-          <button class="btn btn-primary w-100 text-uppercase" type="submit">Register</button>
-
-          <div class="customer-option mt-4 text-center">
-            <span class="text-secondary">Already have account?</span>
-            <a href="shop_cart.html#" class="btn-text js-show-login">Login</a>
-          </div>
-        </form>
-      </div><!-- /.customer__register -->
-    </div><!-- /.customer-forms__wrapper -->
-  </div><!-- /.aside aside_right -->
+  </footer>
 
   <!-- Cart Drawer -->
   <div class="aside aside_right overflow-hidden cart-drawer" id="cartDrawer">
