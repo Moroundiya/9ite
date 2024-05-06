@@ -535,16 +535,27 @@ fieldset {
   background-color: #3D2A20 !important;
   color: #fff;
 }
+
 #parent-9ite-navbar .header-tools__cart {
   color: #fff;
 }
+
 #parent-9ite-navbar .cart-amount {
   background: #fff;
   color: #3D2A20;
 }
 
 
+#mobile-header-mobile .logo .logo__image {
+  margin-left: 4rem;
+  width: 70px;
+  max-height: 70px;
+}
 
+
+.footer-middle .logo .logo__image {
+  margin-left: -.9rem;
+}
 
 
 
@@ -3007,10 +3018,15 @@ progress {
 @media (max-width: 991.98px) {
 
   .footer-middle .logo img {
-    width: 120px;
-    height: 80px;
+    /* width: 120px; */
+    /* height: 80px; */
   }
 
+  .footer-middle .logo .logo__image {
+    margin-left: -.4rem;
+    width: 80px;
+    max-height: 80px;
+  }
 
   #parent-9ite-navbar {
     display: none !important;
