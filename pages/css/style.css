@@ -490,6 +490,15 @@ fieldset {
 }
 
 
+.whatsapp-link {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 40;
+}
+
 
 #currency-select {
   outline: none;
@@ -3020,6 +3029,15 @@ progress {
 }
 
 @media (max-width: 991.98px) {
+
+  .whatsapp-link {
+    position: fixed;
+    bottom: 110px;
+    right:6px;
+    width: 35px;
+    height: 35px;
+    z-index: 40;
+  }
 
   .footer-middle .logo img {
     /* width: 120px; */
@@ -16040,7 +16058,7 @@ textarea.form-control.is-invalid {
   padding: 2.125rem 2.5rem 1.75rem;
   background-color: #3D2A20;
 }
- 
+
 .aside-content {
   margin: 1.875rem 0;
   padding: 0 1.25rem;
